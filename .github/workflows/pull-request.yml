@@ -40,3 +40,28 @@ jobs:
       
       - name: Build
         run: npm run build
+
+    
+  script_test:
+    name: test project
+    runs-on: ubuntu-latest
+    steps:
+      - name: vitest run
+        run: npm run test
+
+  script_lint_check:
+    name: lint check
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint check
+        run: npm run lint:check
+
+  format_check:
+    name: format check
+    runs-on: ubuntu-latest
+    steps:
+      - name: format check
+        run: npm run format:check
+
+
+  
